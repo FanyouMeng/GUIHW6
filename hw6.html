@@ -1,0 +1,53 @@
+<!--
+Name: Fanyou Meng
+Email: Fanyou_Meng@student.uml.edu
+
+91.61 GUI Programming I
+Assignment 6:  Creating an Interactive Dynamic Table
+Fanyou Meng, UMass Lowell Computer Science, Fanyou_Meng@student.uml.edu
+Copyright (c) 2018 by Fanyou Meng.  All rights reserved.  May be
+freely copied or excerpted for educational purposes with credit to the author.
+               updated by F.M. on November 15, 2018
+Description: Creating a mutplication table in the GUI Programming I
+-->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <title>Hw6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/hw6.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/BB3C81AB-5864-45D3-A355-8F7C9C184DFC.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Fanyou Meng
+      </a>
+    </nav>
+    <div id ="container">
+      <p>Please enter a lower bond and a larger bond for both horizontal row and vertical column, then press the "Submit form" button to submit the form.</p>
+      <p>The four bonding numbers should be integers and all in the range of [1, 500].</p>
+
+      <form id="myForm">
+        Horizontal lower bond: <input type="text" name="Hlower"><br>
+        Horizontal larger bond: <input type="text" name="Hlarger"><br>
+        Vertical lower bond: <input type="text" name="Vlower"><br>
+        Vertical larger bond: <input type="text" name="Vlarger"><br><br>
+        <input type="button" onclick="myFunction()" value="Submit form">
+      </form>
+    </div>
+
+    <div class="container" id = "box">
+      <table class="table table-dark table-striped table-bordered" id="demo">
+      </table>
+    </div>
+
+    <script src="js/hw6js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
